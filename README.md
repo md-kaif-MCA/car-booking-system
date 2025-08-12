@@ -1,6 +1,6 @@
 # car-booking-system
 /* this is a simple car booking system based on java oops concepts. where a user can book a car, return a booked car etc. */
-
+/* first CAR class conaining five attributs like Model, carId, brand, basePricePerDay and isAvailable*/
 import java.util.*;
 class Car{
     private String Model;
@@ -40,6 +40,7 @@ class Car{
         isAvailable=true;
     }
 }
+/* second Customer class containing two attributs of customer like customerid and name */
 class Customer{
     private String customerId;
     private String name;
@@ -56,7 +57,7 @@ class Customer{
         return name;
     }
 }
-
+/* third class is rental all the details about customer and the car are given. */
 class Rental{
     private Car car;
     private Customer customer;
@@ -79,6 +80,7 @@ class Rental{
         return days;
     }
 }
+/*fourth one is CarRentalSystem containing datastorage tools like arraylist.*/
 class CarRentalSystem{
     private List<Car> cars;
     private List<Customer> customers;
@@ -118,6 +120,7 @@ class CarRentalSystem{
             System.out.println("car want not rented");
         }
     }
+    /* all control flow will controled by the menu method.*/
     public void menu(){
         Scanner sc= new Scanner(System.in);
         while(true) {
